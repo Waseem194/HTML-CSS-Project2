@@ -1,39 +1,58 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
-body{
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 35em;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 35em;
+  height: 50px;
 }
 .navbar .nav-items {
-   display: flex;
+  display: flex;
+  gap: 3em;
+}
+.navbar .nav-items a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: row;
+  height: calc(100vh-50px);
+}
+#img {
+  height: 337px;
+  width: 100px;
+}
+.left-side{
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+.left-img {
+  height: 100%;
+}
+.latest {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+}
+.right-side {
+  background-color: black;
+  color: white;
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
 
-    gap: 3em;
-}
-.navbar .nav-items a{
-    text-decoration: none;
-    color: hsl(236, 13%, 42%);
-}
-main img{
-width: 60%;
 
-}
-main{
-display: grid;
-grid-template: ;
-
-}
-.box{
-    position: relative;
-}
-.box 
-.right-main{
-    background-color: black;
-
-    color: #ffffff;
+.hading {
+  font-size: 70px;
+  font-weight: 800;
 }
