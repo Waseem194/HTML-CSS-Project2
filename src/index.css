@@ -4,6 +4,10 @@ body {
   font-size: 15px;
   margin: 0;
 }
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -26,17 +30,19 @@ body {
   height: calc(100vh - 50px);
   margin-top: 5%;
 }
-#img {
-  max-height: 100%;
+.image-container{
+  height: 56%;
 }
 .left-side {
-  flex-grow: 1;
+  flex-grow: 3;
+  flex-basis: 0;
   display: flex;
   flex-direction: column;
+  gap: 3em;
 }
 
 .left-img {
-  height: 300px;
+  max-height: 100%;
 }
 .latest {
   display: flex;
@@ -45,9 +51,11 @@ body {
 }
 .right-side {
   background-color: black;
-  padding: 5px 10px;
+  padding: 2em;
   color: white;
   height: 100%;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .right-side h1 {
   color: orange;
@@ -81,6 +89,33 @@ body {
   flex-basis: 0;
 }
 
+.content .additional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousal {
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.carousal .item {
+  display: flex;
+  height: 100px;
+  gap: 1em;
+}
+
+.carousal .item img {
+  max-height: 100%;
+}
+
+.carousal .item .right {
+  display: flex;
+  flex-direction: column;
+}
+/* 
 .carousal {
   display: flex;
 }
@@ -97,4 +132,4 @@ body {
   flex-direction: column;
   flex-grow: 1;
   flex-basis: 0;
-}
+} */
