@@ -30,10 +30,10 @@ h1,h2,h3,h4,h5,h6,p {
   height: calc(100vh - 50px);
   margin-top: 5%;
 }
-.image-container{
+.main .image-container{
   height: 56%;
 }
-.left-side {
+.main .left-side {
   flex-grow: 3;
   flex-basis: 0;
   display: flex;
@@ -41,28 +41,32 @@ h1,h2,h3,h4,h5,h6,p {
   gap: 3em;
 }
 
-.left-img {
+ .left-img {
   max-height: 100%;
 }
-.latest {
+.main .latest {
   display: flex;
   flex-direction: row;
   gap: 2em;
 }
-.right-side {
+.main .latest .right-side {
   background-color: black;
-  padding: 2em;
+
   color: white;
   height: 100%;
   flex-grow: 1;
   flex-basis: 0;
+
 }
-.right-side h1 {
+.main .right-side h1 {
   color: orange;
   font-size: 20px;
   font-weight: 900;
 }
-
+.main .right-side .paragraph1{
+  padding: 2em ;
+  border-bottom: 2px solid gray;
+}
 .content {
   display: flex;
   flex-direction: row;
@@ -99,6 +103,8 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   margin: 0 auto;
   width: 85%;
+  margin-top: 88px;
+  align-items: center;
 }
 
 .carousal .item {
