@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,p {
   margin-top: 5%;
 }
 .main .image-container{
-  height: 389px;
+  height: 337px;
 }
 .right-side,
 .left-side {
@@ -122,7 +122,7 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   margin: 0 auto;
   width: 85%;
-  margin-top: 88px;
+  margin-top: 95px;
   align-items: center;
 }
 
